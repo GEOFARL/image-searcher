@@ -33,8 +33,8 @@ export const imageSearch = {
       placeholder: {
         id: uuidv4(),
         title: {
-          [languages[0].id]: 'Train',
-          [languages[1].id]: 'Потяг',
+          [languages[0].id]: 'Потяг',
+          [languages[1].id]: 'Train',
         },
       },
     },
