@@ -1,0 +1,15 @@
+.heading {
+  font-size: var(--text-xl);
+  margin: 2rem auto 1.25rem auto;
+  width: max-content;
+}
+
+.heading.themeDark {
+  color: var(--color-silver);
+}
+
+@media screen and (min-width: 640px) {
+  .heading {
+    font-size: var(--text-2xl);
+  }
+}

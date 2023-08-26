@@ -1,0 +1,8 @@
+body .themeDark {
+  background-color: var(--color-maroon-very-dark);
+}
+
+.theme {
+  min-height: 100vh;
+  padding-bottom: 3rem;
+}

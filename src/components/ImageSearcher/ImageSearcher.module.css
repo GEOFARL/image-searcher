@@ -1,0 +1,219 @@
+.form {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0 1rem;
+  width: 100%;
+}
+
+.form input {
+  appearance: none;
+  font: inherit;
+  outline: none;
+  border: 2px solid var(--color-maroon);
+  padding: 0.25rem 0.5rem;
+  border-radius: var(--rounded-md) 0 0 var(--rounded-md);
+  width: 100%;
+}
+
+.form button {
+  appearance: none;
+  background-color: transparent;
+  font: inherit;
+  padding: 0.5rem 1rem;
+  border: 2px solid var(--color-maroon);
+  border-left: none;
+  border-radius: 0 var(--rounded-md) var(--rounded-md) 0;
+  background-color: var(--color-maroon);
+  color: var(--color-white);
+  cursor: pointer;
+  transition: color 0.2s ease-out;
+}
+
+.form input:focus,
+.form input:focus + button {
+  outline: 1.5px solid var(--color-maroon);
+}
+
+.form button:hover {
+  background-color: var(--color-maroon-light);
+}
+
+.form button:active {
+  background-color: var(--color-maroon-dark);
+}
+
+.themeDark.imageSearch {
+  background-color: var(--color-maroon-dark);
+}
+
+.themeDark .form input:focus,
+.themeDark .form input:focus + button {
+  outline: 1.5px solid var(--color-white);
+}
+
+.heading {
+  font-size: var(--text-2xl);
+}
+
+.imageCard {
+  width: 15rem;
+  height: 18rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.imageCard:hover {
+  box-shadow: 0rem 0.5rem 1.3rem rgba(0, 0, 0, 0.2);
+  transform: scale(1.15);
+}
+
+.imageCard img {
+  width: 90%;
+  height: 90%;
+  object-fit: contain;
+}
+
+.buttons {
+  padding: 1rem 1.25rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-self: stretch;
+}
+
+.shareButtons {
+  display: flex;
+  gap: 0.3rem;
+}
+
+.themeDark .buttons button {
+  color: var(--color-white);
+}
+
+.themeDark .buttons button:hover {
+  color: var(--color-maroon-dark);
+}
+
+.buttons button {
+  appearance: none;
+  border: none;
+  background-color: transparent;
+  padding: 0.25rem;
+  border: 1px solid var(--color-gray);
+  border-radius: var(--rounded-sm);
+  color: var(--color-maroon-very-dark);
+  font: inherit;
+
+  transition: all 0.2s ease-in-out;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: var(--text-sm);
+}
+
+.buttons button:hover {
+  background-color: var(--color-silver);
+}
+
+.buttons button:active {
+  background-color: var(--color-gray);
+}
+
+.imageGrid {
+  margin: 4rem 0 2rem 0;
+  display: grid;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 2rem;
+}
+
+.themeDark.imageGrid .imageCard {
+  background-color: var(--color-maroon-dark);
+}
+
+.errorBox {
+  margin: 2.5rem 0 2rem 0;
+}
+
+.themeDark.errorBox {
+  background-color: var(--color-maroon-dark);
+  color: var(--color-silver);
+}
+
+.loader {
+  margin-top: 2rem;
+}
+
+.imageSearch {
+  margin: 0 2rem;
+  padding: 1rem 0rem;
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+
+.pagination button {
+  width: 1.75rem;
+  height: 1.75rem;
+  appearance: none;
+  border: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: var(--rounded-sm);
+  cursor: pointer;
+}
+
+@media screen and (min-width: 640px) {
+  .imageSearch {
+    margin: 0 auto;
+    padding: 1.25rem 1.8rem;
+  }
+
+  .imageGrid {
+    grid-template-columns: repeat(2, auto);
+  }
+}
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 1024px) {
+  .imageGrid {
+    grid-template-columns: repeat(3, auto);
+  }
+
+  .imageCard {
+    width: 20rem;
+    height: 20rem;
+  }
+
+  .buttons button {
+    font-size: var(--text-md);
+  }
+}
+
+@media screen and (min-width: 1280px) {
+}
+
+@media screen and (min-width: 1536px) {
+}
